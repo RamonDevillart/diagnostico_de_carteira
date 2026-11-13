@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Diagnóstico da Carteira — Comprar, vender ou manter</title>
+<meta name="description" content="Digite seus ativos e veja na hora quanto cada posição pesa na carteira — e o nível onde ela deveria estar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="diag-carteira">
+
+  <div class="tarja-jic">
+    Ferramenta exclusiva dos alunos da <b>Jornada do Investidor Comum</b>
+    <span class="l2">Uso gratuito encerra em <span class="cd" id="dc_jicCd">—</span> até 12.11 às 23h59</span>
+  </div>
+
+  <div class="topo"><div class="wrap">
+    <div class="dc-head">
+      <p class="eyebrow">Semana Destravando &middot; Aula 3</p>
+      <h1>Comprar, vender<br>ou <span>manter</span></h1>
+      <p class="sub">Digite seus ativos à esquerda. Os gráficos mostram na hora quanto cada posição pesa — e o nível onde ela deveria estar.</p>
+    </div>
+  </div></div>
+
+  <div class="wrap">
+    <div class="layout">
+
+      <div class="side">
+        <p class="slab">1 · Seu momento</p>
+        <div class="perfis" id="dc_perfil">
+          <button type="button" class="pf" data-p="fundacao"><b>+15 anos</b>20% RF / 80% RV</button>
+          <button type="button" class="pf" data-p="construcao"><b>8 a 15 anos</b>30% RF / 70% RV</button>
+          <button type="button" class="pf" data-p="transicao"><b>3 a 7 anos</b>45% RF / 55% RV</button>
+          <button type="button" class="pf" data-p="colheita"><b>menos de 3</b>60% RF / 40% RV</button>
+        </div>
+
+        <p class="slab mt">2 · Seus ativos</p>
+        <div id="dc_grupos"></div>
+
+        <p class="slab mt">3 · Aporte mensal</p>
+        <div class="apo"><span class="cur">R$</span>
+          <input type="text" id="dc_aporte" inputmode="decimal" placeholder="1.000,00" autocomplete="off">
+        </div>
+
+        <p class="slab mt">4 · Salvar</p>
+        <div class="salvar">
+          <button type="button" class="btn-save" id="dc_salvar">Salvar carteira</button>
+          <button type="button" class="btn-clear" id="dc_limpar" title="Apagar os dados salvos">Limpar</button>
+        </div>
+        <p class="save-msg" id="dc_salvoMsg"></p>
+      </div>
+
+      <div class="main" id="dc_painel">
+        <div class="vazio"><b>Comece digitando seus ativos</b>Os gráficos aparecem aqui e se atualizam a cada valor.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
