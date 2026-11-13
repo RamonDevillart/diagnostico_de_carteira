@@ -59,6 +59,16 @@ css/style.css     estilos
 js/app.js         estado, cálculo do diagnóstico, gráficos e persistência
 ```
 
+## Publicação
+
+Publicado pelo GitHub Pages direto do branch `main`, pasta raiz
+(*Settings → Pages → Build and deployment → Source: Deploy from a branch*).
+
+Cada push no `main` republica o site. O arquivo `.nojekyll` desliga o
+processamento do Jekyll, que não faz falta aqui.
+
+<https://ramondevillart.github.io/diagnostico_de_carteira/>
+
 ## Aviso
 
 Material educacional. O diagnóstico avalia apenas o **peso** de cada posição dentro
